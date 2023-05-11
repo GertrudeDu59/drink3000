@@ -6,15 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-dark navbar-expand-md" id="manav">
+            <div class="container">
+    
+    
+    
+                <a href="index.html" class="navbar-brand">Drinks 3000</a>
+                
+    
+    
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Elements du menu -->
+                <div class="navbar-collapse collapse" id="mainMenu" >
+                    <ul class="navbar-nav nav-pills ms-auto">
+                        <li class = "nav-item">
+                            <a href="#recettes" class="nav-link">Recettes</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href="#references" class="nav-link">Références</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href="#contact" class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+
+
+
+
     <section id="acceuil">
+        <p>Découvrez nos boissons énergisantes !</p>
+        <video src="vid/mp4/Pour.mp4" id="background-video" autoplay muted loop poster></video>
+
     </section>
+
+
+
+
+
+
     <section id="recettes">
+        <h2>Nos recettes</h2>
+
+        <div id="boutons">
+            <div class="row">
+              <div class="col-sm">
+                <button type="button" class="bouton" onclick="energ()">Energisante</button>
+              </div>
+              <div class="col-sm">
+                <button type="button" class="bouton" onclick="desalt()">Désaltérante</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="encarts">
+            <div class="row">
+              <div class="col-sm-4">
+
+
+                
+                <div class="encartRecette typeEnergisante" id="nomBoissonOriginal">
+                    <h3>Original</h3>
+                    <hr>
+                    <p>Boisson énergisante à base de blablabla blabla blablabla</p>
+
+                    <div class="encartRecetteBoutons">
+                        <div class="row">
+                          <div class="col-sm">
+                            <button type="button" class="boutonInfo" onclick="">Plus d'infos</button>
+                          </div>
+                          <div class="col-sm colSelect">
+                            <button type="button" id="Original" class="boutonSelect" onclick="selection(this)">Sélectionner</button>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+
+
+              </div>
+              <div class="col-sm-4">
+
+
+                
+                <div class="encartRecette typeEnergisante" id="nomBoissonMojito">
+                    <h3>Mojito</h3>
+                    <hr>
+                    <p>Boisson énergisante à base de blablabla blabla blablabla</p>
+
+                    <div class="encartRecetteBoutons">
+                        <div class="row">
+                          <div class="col-sm">
+                            <button type="button" class="boutonInfo">Plus d'infos</button>
+                          </div>
+                          <div class="col-sm colSelect">
+                            <button type="button" id="Mojito" class="boutonSelect" onclick="selection(this)">Sélectionner</button>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+
+           
+              </div>
+              <div class="col-sm-4">
+
+
+                
+                <div class="encartRecette typeDesalterante" id="nomBoissonTropical">
+                    <h3>Tropical</h3>
+                    <hr>
+                    <p>Boisson énergisante à base de blablabla blabla blablabla</p>
+
+                    <div class="encartRecetteBoutons">
+                        <div class="row">
+                          <div class="col-sm">
+                            <button type="button" class="boutonInfo">Plus d'infos</button>
+                          </div>
+                          <div class="col-sm colSelect">
+                            <button type="button" id="Tropical" class="boutonSelect" onclick="selection(this)">Sélectionner</button>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+
+           
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="choix">
+            <h3>Votre choix :</h3>
+            <p>Boisson sélectionnée :</p>
+            <p id="p1">Aucune</p>
+          </div>
+
     </section>
+
+
+
+
     <section id="references">
         <div class="container">
             <h2 class="text-center">nos références</h2>
@@ -164,6 +312,7 @@
         </div>
     </section>
     <footer></footer>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
     
