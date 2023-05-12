@@ -1,4 +1,8 @@
 console.log("test")
+var typeDesalt = document.getElementsByClassName("typeDesalterante")
+var typeEnerg = document.getElementsByClassName("typeEnergisante")
+
+
 
 function selection(clickedElement){
     var button_id = clickedElement.id;
@@ -9,22 +13,13 @@ function selection(clickedElement){
 
 
 function desalt() {
-    var typeDesalt = document.getElementsByClassName("typeDesalterante")
     console.log(typeDesalt);
-    $('.typeDesalterante').removeClass('typeSelect')
-    $('.typeEnergisante').addClass('typeSelect')
-    
-    var path1 = typeEnerg.getElementsByClassName('encartRecetteBoutons');
-    var path2 = path1.getElementsByClassName('row');
-    var path3 = path2.getElementsByClassName('colSel');
-    var btndisable = path3.getElementsByClassName(``)
-
-
+    $('.typeDesalterante').removeClass('Disabled')
+    $('.typeEnergisante').addClass('Disabled')
 }
 
 function energ() {
-    var typeDesalt = document.getElementsByClassName("typeEnergisante")
     console.log(typeDesalt)
-    $('.typeEnergisante').removeClass('typeSelect')
-    $('.typeDesalterante').addClass('typeSelect')}
+    $('.typeEnergisante').removeClass('Disabled')
+    $('.typeDesalterante').addClass('Disabled')}
 
