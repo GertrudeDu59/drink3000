@@ -12,7 +12,9 @@
 }
 
 
-
+body{
+    overflow-x: hidden;
+}
 
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -68,6 +70,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+    
   }
 
 
@@ -172,8 +175,7 @@
 h2{
     font-family: 'gilroy';
     text-transform: uppercase;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     letter-spacing: 1rem;
 }
 .preference-p{
