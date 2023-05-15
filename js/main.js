@@ -6,7 +6,6 @@ var typeEnerg = document.getElementsByClassName("typeEnergisante")
 
 function selection(clickedElement){
     var button_id = clickedElement.id;
-    console.log("Im button "+ button_id)
     document.getElementById("p1").innerHTML = button_id;
 };
 
@@ -14,14 +13,29 @@ function selection(clickedElement){
 
 function desalt() {
     console.log(typeDesalt);
-    $('.typeDesalterante').removeClass('Disabled')
-    $('.typeEnergisante').addClass('Disabled')
+    $('.typeDesalterante').removeClass('Disabled');
+    $('.typeEnergisante').addClass('Disabled');
+
+    $('.typeEnergisante').addClass('HiddenDesc');
+    $('.typeEnergisante').removeClass('HiddenDisp');
+
+    $('.typeDesalterante').addClass('HiddenDisp');
+    $('.typeDesalterante').removeClass('HiddenDesc');
 }
 
 function energ() {
     console.log(typeDesalt)
-    $('.typeEnergisante').removeClass('Disabled')
-    $('.typeDesalterante').addClass('Disabled')}
+    $('.typeEnergisante').removeClass('Disabled');
+    $('.typeDesalterante').addClass('Disabled');
+
+    $('.typeDesalterante').addClass('HiddenDesc');
+    $('.typeDesalterante').removeClass('HiddenDisp');
+
+    
+    $('.typeEnergisante').addClass('HiddenDisp');
+    $('.typeEnergisante').removeClass('HiddenDesc');
+
+}
 
 
 const manav = document.querySelector('#manav');
@@ -38,3 +52,4 @@ window.addEventListener('scroll', () => {
         mainNav.classList.add('hidden');
     }
 });
+

@@ -262,3 +262,19 @@ h3 {
 #contact {
     background-color: #464646;
 }
+
+
+
+
+
+.HiddenDesc .desc {
+    display: none;
+}
+
+.HiddenDisp .disp {
+    display: none;
+}
+
+p.Hidden {
+    display: none;
+}
