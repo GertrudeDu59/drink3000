@@ -60,11 +60,38 @@ nav.hidden  {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color:white;
-    font-size:xx-large;
+    flex-direction: column;
+
     }
 
+#acceuil h1 {
+    color:white;
+    font-size: 70px;
+    text-align: center;
+}
+
+@keyframes hautbas {
+    0% {
+      bottom: 0;
+    }
+    40% {
+      bottom: 20px;
+    }
+    80% {
+        bottom: 0;
+    }
+  }
+  
+
+#acceuil i {
+    color:white;
+	position: absolute;
+	bottom: 0;
+    font-size: 80px;
+        animation-name: hautbas;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 
 #acceuil #background-video {
     
@@ -77,27 +104,41 @@ nav.hidden  {
     z-index: -1;
     
   }
+/* .video {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#background-video {
+} */
 
 /* -------------------------------------------------------------------------------------------------- */
 /* Recettes */
 
 #recettes {
     margin: 19rem 0rem 7rem 0;
-
     text-align: center;
 }
 
 
 #boutons, .encarts, #choix {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 25px;
     padding-bottom: 25px;
+    padding:25px, 100px;
 }
 
 .bouton {
-    background-color: lightgray;
+    background-color: rgb(208, 210, 195);
     border-radius: 2rem;
     border : none;
     color: black;
@@ -137,33 +178,38 @@ nav.hidden  {
     cursor: not-allowed;
     opacity: 0.65;
     filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    box-shadow: none;}
-
-.encartRecette {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align:left;
-    padding:10px;
-    border-radius: 0.5rem;
-    color:white;
 }
 
+.encartRecette {
+
+    text-align:left;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 0.5rem;
+    color:white;
+    font-family: 'gilroy';
+    font-style: normal;
+}
+
+.encartRecette hr  {
+    height: 0px;
+    border: none;
+    border-top: 3px solid white;
+}
+
+
+
     #nomBoissonOriginal {
-        background-color:red;
+        background-color:rgb(226, 6, 20);
     }
 
     #nomBoissonMojito {
-        background-color: rgb(115, 170, 32);
+        background-color: rgb(160, 197, 37);
     }
 
     #nomBoissonTropical {
-        background-color: rgb(187, 127, 15);
+        background-color: rgb(201, 76, 5);
     }
-
-.typeSelect {
-    background-color: rgba(0, 0, 0, 0.219) !important;
-}
 
 
 .encartRecetteBoutons .row {
@@ -174,8 +220,11 @@ nav.hidden  {
 }
 
 #choix {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(208, 210, 195);
+    font-size: large;
+    padding-bottom: 50px;
 }
+
 h2{
     font-family: 'gilroy';
     text-transform: uppercase;
