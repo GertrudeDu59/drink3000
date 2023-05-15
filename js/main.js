@@ -23,3 +23,18 @@ function energ() {
     $('.typeEnergisante').removeClass('Disabled')
     $('.typeDesalterante').addClass('Disabled')}
 
+
+const manav = document.querySelector('#manav');
+manav.classList.add('hidden');
+const mainNav = document.querySelector('#mainNav');
+mainNav.classList.add('hidden');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY == 0){
+        mainNav.classList.remove('hidden');
+        manav.classList.add('hidden');
+    }if(window.scrollY >= 200){
+        manav.classList.remove('hidden');
+        mainNav.classList.add('hidden');
+    }
+});
